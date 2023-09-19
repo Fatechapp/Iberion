@@ -4,6 +4,7 @@
     --green-main: #33B08C;
     --green-accent: #CCDEA0;
     --blue-accent: #152547;
+    --blue-light: #E6F2F7;
     --white: #ffffff;
 }
 
@@ -14,14 +15,19 @@
     font-family: 'Inter', sans-serif;
 }
 
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
 /*NAVBAR*/
 nav {
     background: var(--green-main);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 0.35rem;
+    padding-bottom: 0.25rem;
 }
 nav > div {
     margin: auto;
@@ -43,8 +49,8 @@ nav > div {
 
 /*nav-left-side*/
 .nav-left-side, .nav-right-side {
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 .nav-left-side img {
     height: 4.5rem;
@@ -106,6 +112,83 @@ nav > div {
     transition: 0.5s;
 }
 
+/*HEADER*/
+header {
+    background: var(--green-main);
+    height: 86.5vh;
+}
+
+/*header-mid*/
+.header-mid {
+    display: flex;
+    justify-content: center;
+}
+.circle-500-left {
+    position: absolute;
+    height: 30rem;
+    width: auto;
+    left: 0;
+    box-shadow: 0px 4px 4px 0px rgba(48, 48, 48, 0.50);
+}
+.Iberion-full-logo {
+    position: absolute;
+    top: 15rem;
+    z-index: 10;
+}
+.circle-500-right {
+    position: absolute;
+    height: 30rem;
+    width: auto;
+    right: 0;
+    box-shadow: 0px 4px 4px 0px rgba(48, 48, 48, 0.50);
+
+}
+
+/*header-bottom*/
+.header-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.5rem;
+    position: absolute;
+    top: 30rem;
+    right:0%;
+    left:0%;
+}
+
+.header-bottom button {
+    border-style: none;
+    background: var(--white);
+    color: var(--blue-accent);
+    padding: 1.0rem 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0px 4px 4px 0px rgba(48, 48, 48, 0.50);
+    cursor: pointer;
+}
+
+.header-bottom button:hover {
+    color: var(--green-accent);
+    background: var(--blue-accent);
+    transition: 0.25s ease-in-out;
+}
+
+/*OVERVIEW*/
+.overview {
+    background: var(--blue-light);
+    padding: 5.25rem 10%;
+    color: var(--blue-accent);
+}
+.paragraf {
+    display: inline-flex;
+    justify-content: center;
+    gap: 5rem;
+}
+.paragraf p {
+    text-align: justify;
+    max-width: 30rem;
+}
+
+
 /*Dark Mode*/
 
 #toggle.active .indicator {
@@ -120,9 +203,41 @@ body.active {
 }
 
 /*Media Queries*/
-@media (max-width: 450px) {
+
+/*Tablet*/
+@media (max-width: 850px) {
+    html {
+        font-size: 90.5%;
+    }
+    /*nav*/
+    nav {
+        background: var(--blue-accent);
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    /*nav-left-side*/
     .nav-left-side, .nav-right-side {
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: 1.6rem;
+        margin-right: 1.6rem;
+    }
+    .nav-left-side img {
+        height: 4.5rem;
+        width: auto;
+    }
+}
+@media (max-width: 500px) {
+    /*nav*/
+    nav {
+        background: var(--blue-accent);
+    }
+}
+
+/*Handphone*/
+@media (max-width: 450px) {
+    nav {
+        background: var(--green-accent);
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 }
