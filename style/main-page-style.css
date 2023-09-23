@@ -19,6 +19,14 @@ h1 {
     font-weight: 700;
     font-size: 2rem;
 }
+h2 {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
 
 /*NAVBAR*/
 nav {
@@ -74,8 +82,6 @@ nav > div {
     display: inline-block;
     text-decoration: none;
 }
-.nav-mid-side a:hover {
-}
 .nav-mid-side a::after{
     content: '';
     display: block;
@@ -97,7 +103,7 @@ nav > div {
     border-radius: 1.5rem;
     background: var(--white);
     transition: 0.5s;
-    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 1);
     cursor:pointer;
 }
 #toggle .indicator {
@@ -186,8 +192,191 @@ header {
 .paragraf p {
     text-align: justify;
     max-width: 30rem;
+    font-weight: 400;
 }
 
+/*ORGANIZER*/
+.organizer {
+    padding: 5.25rem 10%;
+    background: var(--green-main);
+    color: var(--blue-accent);
+}
+
+/*mid-square*/
+
+/*mid-square-top*/
+.mid-square-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.25rem;
+}
+.icon-box-ISG {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 25%;
+    z-index: 5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
+}
+.icon-box-ISG img{
+    width: 5rem;
+    height: auto;
+    z-index: 10;
+}
+.text-box-ISG {
+    background: var(--white);
+    padding: 3.25rem;
+    border-radius: 3rem;
+    width: 25rem;
+    text-align: center;
+    max-width: 20rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
+    z-index: 2;
+}
+
+/*mid-square-bottom*/
+.mid-square-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.25rem;
+    z-index: 20;
+}
+.icon-box-Iberion {
+    background: var(--white);
+    padding: 1.0rem;
+    border-radius: 25%;
+    z-index: 5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
+}
+.icon-box-Iberion img {
+    width: 8rem;
+    height: auto;
+    z-index: 10;
+}
+.text-box-Iberion {
+    background: var(--white);
+    padding: 4rem;
+    border-radius: 3.125rem;
+    width: 20rem;
+    text-align: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
+    z-index: 10;
+}
+
+.penyelenggara-left {
+    position: absolute;
+    transform: rotate(-90deg);
+    font-size: 2.5rem;
+    top: 72.5rem;
+    left: -5rem;
+    z-index: 2;
+}
+.penyelenggara-right {
+    position: absolute;
+    transform: rotate(90deg);
+    font-size: 2.5rem;
+    top: 72.5rem;
+    right: -5rem;
+    z-index: 2;
+}
+.penyelenggara-circle-500-full-1 {
+    position: absolute;
+    width: 24.5rem;
+    top: 57rem;
+    left: 13%;
+    z-index: 1;
+}
+.penyelenggara-circle-500-full-2 {
+    position: absolute;
+    width: 15.5rem;
+    top: 1120px;
+    right: 25%;
+    z-index: 1;
+}
+
+/*THEME-AND-SUB-THEME*/
+.theme-and-sub-theme {
+    background: var(--blue-light);
+    padding: 3.25rem 0;
+    color: var(--blue-accent);
+}
+.theme-and-sub-theme h1, h2 {
+    text-align: center;
+}
+.theme-and-sub-theme h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+    font-weight: 400;
+}
+
+/*ROUND*/
+.round {
+    background: var(--green-main);
+    padding: 3.25rem 0;
+    color: var(--blue-accent);
+}
+.judul-babak {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.box-babak {
+    margin-top: 2.5rem;
+}
+.babak-1, .babak-2, .babak-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.babak-1 h1, .babak-2 h1, .babak-3 h1 {
+    background: var(--white);
+    border-radius: 2rem;
+    z-index: 5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
+    margin-bottom: 1rem;
+}
+.babak-1 h1 {
+    padding: 2rem 2.75rem;
+}
+.babak-2 h1 {
+    padding: 2rem 2.65rem;
+}
+.babak-3 h1 {
+    padding: 2rem 2.65rem;
+}
+.babak-1 h2 , .babak-2 h2, .babak-3 h2{
+    background: var(--white);
+    font-weight: 400;
+    border-radius: 2rem;
+    z-index: 5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
+    margin-bottom: 1rem;
+}
+.babak-1 h2 {
+    padding: 2.5rem;
+}
+.babak-2 h2 {
+    padding: 2.5rem 7.25rem 2.5rem 2.5rem;
+}
+.babak-3 h2 {
+    padding: 2.5rem 15.25rem 2.5rem 2.5rem;
+}
+
+.round-circle-500-full-1 {
+    position: absolute;
+    width: 15rem;
+    top: 1820px;
+    left: 20%;
+    z-index: 1;
+}
+.round-circle-500-full-2 {
+    position: absolute;
+    width: 17rem;
+    top: 2050px;
+    right: 20%;
+    z-index: 1;
+}
 
 /*Dark Mode*/
 
