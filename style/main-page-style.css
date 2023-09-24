@@ -93,6 +93,11 @@ nav > div {
 .nav-mid-side a:hover::after {
     transform: scaleX(0.6);
 }
+.nav-right-side {
+    display: flex;
+    color: var(--blue-accent);
+    gap: 1rem;
+}
 
 /*nav-right-side*/
 #toggle {
@@ -121,6 +126,7 @@ nav > div {
 /*HEADER*/
 header {
     background: var(--green-main);
+    /*height: 86.5vh;*/
     height: 32.5rem;
 }
 
@@ -184,8 +190,12 @@ header {
     padding: 5.25rem 10%;
     color: var(--blue-accent);
 }
+.overview h1 {
+    text-align: center;
+    margin-left: -56rem;
+}
 .paragraf {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     gap: 5rem;
 }
@@ -193,6 +203,22 @@ header {
     text-align: justify;
     max-width: 30rem;
     font-weight: 400;
+}
+.paragraf-En {
+    display: none;
+    justify-content: center;
+    gap: 5rem;
+}
+.paragraf-En p {
+    text-align: justify;
+    max-width: 30rem;
+    font-weight: 400;
+}
+#Gambaran.active .paragraf-En{
+    display: flex;
+}
+#Gambaran.active .paragraf {
+    display: none;
 }
 
 /*ORGANIZER*/
@@ -278,6 +304,22 @@ header {
     font-size: 2.5rem;
     top: 72.5rem;
     right: -5rem;
+    z-index: 2;
+}
+.penyelenggara-left-En {
+    position: absolute;
+    transform: rotate(-90deg);
+    font-size: 2.5rem;
+    top: 72.5rem;
+    left: -2rem;
+    z-index: 2;
+}
+.penyelenggara-right-En {
+    position: absolute;
+    transform: rotate(90deg);
+    font-size: 2.5rem;
+    top: 72.5rem;
+    right: -2rem;
     z-index: 2;
 }
 .penyelenggara-circle-500-full-1 {
@@ -378,7 +420,56 @@ header {
     z-index: 1;
 }
 
-/*Dark Mode*/
+/*TIMELINE*/
+.timeline {
+    background: var(--blue-light);
+    color: var(--blue-accent);
+    padding: 3.25rem 0;
+}
+.timeline h1 {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+.timeline-box-upper, .timeline-box-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.timeline-box-upper {
+    margin-bottom: 1.75rem;
+}
+.timeline-box-bottom {
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
+}
+.timeline-box-upper .card, .timeline-box-bottom .card{
+    border-radius: 3.125rem;
+    background: var(--white);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
+    border-radius: 3.125rem;
+}
+.timeline-box-upper .card .card-body, .timeline-box-bottom .card .card-body {
+    padding: 1.75rem 3.5rem;
+}
+.timeline-box-upper .card p, .timeline-box-bottom .card p{
+    text-align: center;
+    font-size: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+.timeline-box-upper .card h2, .timeline-box-bottom .card h2{
+    font-weight: 400;
+    text-align: center;
+}
+
+/*AWARDS*/
+.awards {
+    background: var(--green-main);
+    padding: 3.25rem 0;
+    color: var(--blue-accent);
+}
+
+/*En Mode*/
 
 #toggle.active .indicator {
     background: var(--white);
@@ -387,8 +478,21 @@ header {
 #toggle.active {
     background: var(--blue-accent);
 }
-body.active {
+.penyelenggara-right-En, .penyelenggara-left-En {
+    display: none;
+}
+#Penyelenggara.active .penyelenggara-right, #Penyelenggara.active .penyelenggara-left{
+    display: none;
+}
+#Penyelenggara.active .penyelenggara-left-En, #Penyelenggara.active .penyelenggara-right-En {
+    display: block;
+}
 
+/*SPONSOR*/
+.sponsor {
+    background: var(--green-main);
+    padding: 3.25rem 0;
+    color: var(--blue-accent);
 }
 
 /*Media Queries*/
