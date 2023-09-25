@@ -468,6 +468,48 @@ header {
     padding: 3.25rem 0;
     color: var(--blue-accent);
 }
+.awards h1 {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+.awards-leaderboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.awards-leaderboard .card {
+}
+.awards-leaderboard .card .card-header {
+    background: var(--blue-light);
+}
+
+
+/*SPONSOR*/
+.sponsor {
+    background: var(--green-main);
+    padding: 10.25rem 0;
+    color: var(--blue-accent);
+}
+.sponsor h1 {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+.sponsor-upper-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 2rem;
+}
+.sponsor-upper-box .box {
+    color: var(--blue-accent);
+    background: var(--white);
+    padding: 5rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
+    width: 10rem;
+    height: 10rem;
+}
 
 /*En Mode*/
 
@@ -488,12 +530,7 @@ header {
     display: block;
 }
 
-/*SPONSOR*/
-.sponsor {
-    background: var(--green-main);
-    padding: 3.25rem 0;
-    color: var(--blue-accent);
-}
+
 
 /*Media Queries*/
 
