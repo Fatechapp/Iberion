@@ -19,17 +19,18 @@
 <div class="alert alert-danger" role="alert" id="error-allert">
     fitur belum optimal
 </div>
+<button id="scroll-up-button" onclick="scrollToTop()"><i class="bi bi-arrow-up-short"></i></span></button>
 <nav>
     <div class="nav-left-side">
         <img src="assets/Iberion-logo.svg" alt="Iberion-logo">
     </div>
     <div class="nav-mid-side">
         <ul>
-            <li><a href="#">Overview</a></li>
-            <li><a href="#">Timeline</a></li>
-            <li><a href="#">Awards</a></li>
-            <li><a href="#">Sponsors</a></li>
-            <li><a href="#">Booklet</a></li>
+            <li><a href="#Gambaran">Overview</a></li>
+            <li><a href="#Garis-Waktu">Timeline</a></li>
+            <li><a href="#Penghargaan">Awards</a></li>
+            <li><a href="#Sponsor">Sponsors</a></li>
+            <li><a href="#Booklet">Booklet</a></li>
         </ul>
     </div>
     <div class="nav-right-side">
@@ -48,8 +49,12 @@
         <img src="assets/circle-500-right.svg" alt="circle-500-right" class="circle-500-right">
     </div>
     <div class="header-bottom">
-        <button class="register">Register</button>
-        <button class="partnership">Be Our Partner</button>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHFT6FJpcR1cBRQ-sJWeCmqEVsEhWE4mX95J1aeRCn-UEumg/viewform" target="_blank">
+            <button class="register">Register</button>
+        </a>
+        <a href="assets/Sponsorship%20Proposal.pdf" download="">
+            <button class="partnership">Be Our Partner</button>
+        </a>
     </div>
 </header>
 
@@ -94,13 +99,21 @@
 </section>
 
 <section class="theme-and-sub-theme" id="Tema-dan-Sub-Tema">
-    <h1>TEMA</h1>
-    <h2>Audit Risiko Keamanan Sistem Informasi</h2>
-    <h1>SUBTEMA</h1>
+    <div class="tema-id">
+        <h1>TEMA</h1>
+        <h2>Audit Risiko Keamanan Sistem Informasi</h2>
+        <h1>SUBTEMA</h1>
+    </div>
+    <div class="tema-en">
+        <h1>THEME</h1>
+        <h2>Audit of Information Systems Security Risks</h2>
+        <h1>SUBTHEME</h1>
+    </div>
 </section>
 
 <section class="round" id="Babak">
-    <h1 class="judul-babak">BABAK</h1>
+    <h1 class="judul-babak-id">BABAK</h1>
+    <h1 class="judul-babak-en">ROUND</h1>
     <div class="box-babak">
         <div class="babak-1">
             <h1>1</h1>
@@ -213,7 +226,8 @@
 </section>
 
 <section class="sponsor" id="Sponsor">
-    <h1>SPONSOR KAMI</h1>
+    <h1 class="sponsor-id">SPONSOR KAMI</h1>
+    <h1 class="sponsor-en">OUR SPONSOR</h1>
     <div class="sponsor-upper-box">
         <div class="box">0</div>
         <div class="box">1</div>
@@ -229,11 +243,57 @@
 </section>
 
 <section class="booklet" id="Booklet">
-    <h1>BOOKLET</h1>
+    <div class="booklet-box">
+        <div class="booklet-box-left">
+            <h1>BOOKLET</h1>
+            <p class="booklet-id">Kami menyediakan Booklet yang informatif sebagai panduan yang dapat anda gunakan untuk sukses dalam kompetisi kami.</p>
+            <p class="booklet-en">We provide an informative booklet as a guide that you can use to be successful in our competitions.</p>
+        </div>
+        <div class="booklet-box-right">
+            <a href="https://drive.google.com/drive/folders/1-PunBP6rMp7pkWvLDs7K2w5nD9zI4oXR?usp=sharing" target="_blank">
+                <button>Booklet</button>
+            </a>
+        </div>
+    </div>
 </section>
 
 <footer>
-    <div class="icon-top"></div>
+    <div class="footer-top-area">
+        <img src="assets/Iberion-full-logo.svg" alt="">
+        <a href="https://student-activity.binus.ac.id/isgbinus/" target="_blank">
+            <img src="assets/ISG%20BINUS-logo.svg" alt="">
+        </a>
+        <a href="https://engage.isaca.org/indonesiachapter/home" target="_blank">
+            <img src="assets/ISACA-Indonesia-Chapter-Logo.svg" alt="">
+        </a>
+        <a href="https://www.isaca.org/" target="_blank">
+            <img src="assets/ISACA-Logo.svg" alt="">
+        </a>
+        <a href="https://binus.ac.id/" target="_blank">
+            <img src="assets/BINUS-University-Logo.svg" alt="">
+        </a>
+    </div>
+    <div class="footer-mid-area">
+        <div class="footer-mid-area-left">
+            <ul>
+                <li><a href="https://www.isaca.org/">ISACA</a></li>
+                <li><a href="https://engage.isaca.org/indonesiachapter/home">ISACA Indonesia Chapter</a></li>
+                <li><a href="https://student-activity.binus.ac.id/isgbinus/">ISACA Student Group BINUS University</a></li>
+            </ul>
+        </div>
+        <div class="footer-mid-area-mid">
+            <div class="garis-atas"></div>
+        </div>
+        <div class="footer-mid-area-right">
+            <!--Social Media ISG-->
+            <div class="box-ads"></div>
+            <div class="box-ads"></div>
+            <div class="box-ads"></div>
+        </div>
+    </div>
+    <div class="footer-bottom-area">
+        <p>© 2023 ISACA Student Group BINUS University</p>
+    </div>
 </footer>
 <!--Javascript-->
 <script src="script/main-page-script.js"></script>
