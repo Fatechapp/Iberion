@@ -6,6 +6,7 @@
     --blue-accent: #152547;
     --blue-light: #E6F2F7;
     --white: #ffffff;
+    --black: #313131;
 }
 
 * {
@@ -23,10 +24,37 @@ h2 {
     font-weight: 600;
     font-size: 1.25rem;
 }
-body::-webkit-scrollbar {
-    display: none;
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--green-main); /* Gunakan warna yang Anda tentukan */
+    border-radius: 3px; /* Atur sudut bulat untuk thumb */
 }
 
+#scroll-up-button {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--white);
+    color: var(--black);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    line-height: 50%;
+    transition: 0.18s ease-in-out;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
+    z-index: 10;
+    font-size: 1.5rem;
+}
+
+#scroll-up-button:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
 
 /*NAVBAR*/
 nav {
@@ -189,10 +217,6 @@ header {
     background: var(--blue-light);
     padding: 5.25rem 10%;
     color: var(--blue-accent);
-}
-.overview h1 {
-    text-align: center;
-    margin-left: -56rem;
 }
 .paragraf {
     display: flex;
@@ -358,7 +382,7 @@ header {
     padding: 3.25rem 0;
     color: var(--blue-accent);
 }
-.judul-babak {
+.round h1 {
     text-align: center;
     margin-bottom: 5rem;
 }
@@ -511,6 +535,105 @@ header {
     height: 10rem;
 }
 
+/*BOOKLET*/
+.booklet {
+    background: var(--blue-light);
+    color: var(--blue-accent);
+    padding: 7.25rem 0rem;
+}
+.booklet-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+}
+.booklet-box-left {
+    width: 26rem;
+}
+.booklet-box-left p{
+    text-align: justify;
+}
+.booklet-box-right a {
+    text-decoration: none;
+
+}
+.booklet-box-right button {
+    border-style: none;
+    background: var(--white);
+    color: var(--blue-accent);
+    padding: 1.0rem 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0px 4px 4px 0px rgba(48, 48, 48, 0.50);
+    cursor: pointer;
+}
+
+.booklet-box-right button:hover {
+    color: var(--green-accent);
+    background: var(--blue-accent);
+    transition: 0.25s ease-in-out;
+}
+
+/*FOOTER*/
+footer {
+    background: var(--black);
+    color: var(--white);
+    padding: 3.25rem 0rem;
+}
+.footer-top-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+.footer-top-area img {
+    height: 2rem;
+    width: auto;
+    transition: 0.25s ease-in-out;
+}
+.footer-top-area img:hover {
+    height: 2.5rem;
+    width: auto;
+    transition: 0.25s ease-in-out;
+}
+.footer-mid-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    margin-bottom: 5rem;
+}
+.footer-mid-area-left li{
+    list-style: none;
+    color: var(--white);
+}
+.footer-mid-area-left a{
+    text-decoration: none;
+    color: var(--white);
+    transition: 0.25s ease-in-out;
+}
+.footer-mid-area-left a:hover{
+    text-decoration: none;
+    color: var(--green-accent);
+    transition: 0.25s ease-in-out;
+}
+.garis-atas {
+    width: 0.25rem;
+    height: 5rem;
+    background: var(--white);
+}
+.footer-mid-area-right {
+    display: flex;
+    gap: 2rem;
+}
+.footer-mid-area-right .box-ads {
+    height: 4rem;
+    width: 4rem;
+    background: var(--white);
+}
+.footer-bottom-area p {
+    text-align: center;
+}
 /*En Mode*/
 
 #toggle.active .indicator {
@@ -529,45 +652,58 @@ header {
 #Penyelenggara.active .penyelenggara-left-En, #Penyelenggara.active .penyelenggara-right-En {
     display: block;
 }
-
-
+#Tema-dan-Sub-Tema .tema-en {
+    display: none;
+}
+#Tema-dan-Sub-Tema.active .tema-en {
+    display: block;
+}
+#Tema-dan-Sub-Tema.active .tema-id {
+    display: none;
+}
+#Babak .judul-babak-en {
+    display: none;
+}
+#Babak.active .judul-babak-en {
+    display: block;
+}
+#Babak.active .judul-babak-id {
+    display: none;
+}
+#Sponsor .sponsor-en {
+    display: none;
+}
+#Sponsor.active .sponsor-en {
+    display: block;
+}
+#Sponsor.active .sponsor-id {
+    display: none;
+}
+#Booklet .booklet-en {
+    display: none;
+}
+#Booklet.active .booklet-en {
+    display: block;
+}
+#Booklet.active .booklet-id {
+    display: none;
+}
 
 /*Media Queries*/
 
 /*Tablet*/
 @media (max-width: 850px) {
-    html {
-        font-size: 90.5%;
-    }
-    /*nav*/
-    nav {
-        background: var(--blue-accent);
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-    }
 
-    /*nav-left-side*/
-    .nav-left-side, .nav-right-side {
-        margin-left: 1.6rem;
-        margin-right: 1.6rem;
-    }
-    .nav-left-side img {
-        height: 4.5rem;
-        width: auto;
-    }
-}
-@media (max-width: 500px) {
-    /*nav*/
-    nav {
-        background: var(--blue-accent);
-    }
 }
 
 /*Handphone*/
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     nav {
-        background: var(--green-accent);
+        background: var(--green-main);
         padding-top: 2rem;
         padding-bottom: 2rem;
+    }
+    nav a {
+        font-size: 150%;
     }
 }
