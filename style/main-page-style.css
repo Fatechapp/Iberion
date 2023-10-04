@@ -381,6 +381,7 @@ header {
     display: flex;
     justify-content: center;
     gap: 3rem;
+    z-index: 20;
 }
 .subtheme-icon-box {
     display: flex;
