@@ -389,6 +389,7 @@ header {
     text-align: center;
     width: 8rem;
     font-weight: 400;
+    z-index: 20;
 }
 .subtheme-icon-box-background {
     background: var(--white);
@@ -398,6 +399,7 @@ header {
     height: 8rem;
     border-radius: 3rem;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
+    z-index: 20;
 }
 .subtheme-icon-box img {
     height: 5rem;
@@ -462,14 +464,14 @@ header {
     width: 15rem;
     top: 1820px;
     left: 20%;
-    z-index: 1;
+    z-index: -1;
 }
 .round-circle-500-full-2 {
     position: absolute;
     width: 17rem;
     top: 2050px;
     right: 20%;
-    z-index: 1;
+    z-index: -1;
 }
 
 /*TIMELINE*/
