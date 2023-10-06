@@ -381,7 +381,6 @@ header {
     display: flex;
     justify-content: center;
     gap: 3rem;
-    z-index: 20;
 }
 .subtheme-icon-box {
     display: flex;
@@ -389,7 +388,6 @@ header {
     text-align: center;
     width: 8rem;
     font-weight: 400;
-    z-index: 20;
 }
 .subtheme-icon-box-background {
     background: var(--white);
@@ -399,7 +397,6 @@ header {
     height: 8rem;
     border-radius: 3rem;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
-    z-index: 20;
 }
 .subtheme-icon-box img {
     height: 5rem;
@@ -462,16 +459,16 @@ header {
 .round-circle-500-full-1 {
     position: absolute;
     width: 15rem;
-    top: 1820px;
+    top: 2100px;
     left: 20%;
-    z-index: -1;
+    z-index: 1;
 }
 .round-circle-500-full-2 {
     position: absolute;
     width: 17rem;
-    top: 2050px;
+    top: 2350px;
     right: 20%;
-    z-index: -1;
+    z-index: 1;
 }
 
 /*TIMELINE*/
@@ -533,9 +530,11 @@ header {
     gap: 2rem;
 }
 .awards-leaderboard .card {
+
 }
 .awards-leaderboard .card .card-header {
     background: var(--blue-light);
+
 }
 
 
@@ -559,10 +558,17 @@ header {
 .sponsor-upper-box .box {
     color: var(--blue-accent);
     background: var(--white);
-    padding: 5rem;
+    padding: 2rem;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
     width: 10rem;
     height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sponsor-upper-box .box img {
+    width: 10rem;
+    height: auto;
 }
 
 /*BOOKLET*/
@@ -657,9 +663,15 @@ footer {
     gap: 2rem;
 }
 .footer-mid-area-right .box-ads {
-    height: 4rem;
-    width: 4rem;
-    background: var(--white);
+    width: 3rem;
+    height: 3rem;
+    opacity: 85%;
+    transition: 0.2s ease-in-out;
+}
+
+.footer-mid-area-right .box-ads:hover {
+    opacity: 100%;
+    transition: 0.2s ease-in-out;
 }
 .footer-bottom-area p {
     text-align: center;
@@ -735,5 +747,28 @@ footer {
     }
     nav a {
         font-size: 150%;
+    }
+    #scroll-up-button {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 15rem;
+        height: 15rem;
+        background-color: var(--white);
+        color: var(--black);
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        line-height: 50%;
+        transition: 0.18s ease-in-out;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
+        z-index: 10;
+        font-size: 1.5rem;
+    }
+
+    #scroll-up-button:hover {
+        background-color: var(--black);
+        color: var(--white);
     }
 }
