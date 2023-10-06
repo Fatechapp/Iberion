@@ -753,8 +753,8 @@ footer {
         position: fixed;
         bottom: 30px;
         right: 30px;
-        width: 15rem;
-        height: 15rem;
+        width: 30rem;
+        height: 30rem;
         background-color: var(--white);
         color: var(--black);
         border: none;
