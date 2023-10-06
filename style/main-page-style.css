@@ -740,6 +740,9 @@ footer {
 
 /*Handphone*/
 @media (max-width: 500px) {
+    body {
+        font-size: 35%;
+    }
     nav {
         background: var(--green-main);
         padding-top: 2rem;
