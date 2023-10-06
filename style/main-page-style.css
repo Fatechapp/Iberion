@@ -739,7 +739,7 @@ footer {
 }
 
 /*Handphone*/
-@media (max-width: 500px) {
+@media (max-width: 500pt) {
     body {
         font-size: 35%;
     }
