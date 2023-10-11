@@ -565,9 +565,15 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.25s ease-in-out;
+
+}
+.sponsor-upper-box .box:hover {
+    width: 12.5rem;
+    transition: 0.25s ease-in-out;
 }
 .sponsor-upper-box .box img {
-    width: 10rem;
+    width: 7rem;
     height: auto;
 }
 
